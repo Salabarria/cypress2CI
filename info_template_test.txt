@@ -1,0 +1,16 @@
+describe('template spec', () => {
+  it('passes', () => {
+    cy.visit('https://example.cypress.io')
+  })
+})
+
+
+
+module.exports = {
+  projectId: "q741s8",
+  // ...rest of the Cypress project config
+}
+
+
+
+npx cypress run --record --key 27fd705e-df32-4bc0-94b8-a0c0eff018e6

@@ -1,0 +1,25 @@
+Pasos para crear un proyecto en cypresss
+/////////////////////////////////////////////////////////////////////
+1----   npm install cypress --save-dev  // esto instala las librerias de cypress y crear
+una carpeta "node_modules" en la raaiz del proyecto y ademas crea dos ficheros .json denominads
+package-lock.json y package.json
+2 --- para probar se usa el comando npx cypress open , esto crea la gui de test automatizados
+y crea ficheros predefinidos como carpetas fixtures y support donde iran ficheros para configurar
+los fichros .json para cargar desde nuestros test y comando utilizados con frecuecias o personalizados
+que crearemos. dentro de las carpetas estan los ficheros wxample.json,commands.js ,e2e.js y cypress.config.js
+Con esta conficguracion que realiza el comando cypress open se puede comenzar a realizar testpredefinis
+por el sistema y chequeo de que todo funciona correctamente.
+3 utilizar los comandos "npx cypress run" para correr los test sin gui
+4 utilizar un template de test que es el siguiente:
+/////////////////////////////////////////////////
+describe('template spec', () => {
+  it('passes', () => {
+    cy.visit('https://example.cypress.io')
+  })
+})
+
+/////////////////////////////////
+
+
+
+
